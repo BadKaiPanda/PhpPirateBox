@@ -1,0 +1,21 @@
+<?php
+/******
+PhpPiratebox
+Copyright 2013 Sergio Monedero
+Released under GPLv3, see http://www.gnu.org/licenses/gpl-3.0.html
+******/
+
+    $phppiratebox_domain = "phppiratebox.local";  // Remove or comment this line if you don't have a local domain configured
+
+    $upload_folder_path = "/phppirateboxdata/uploads/";   // Folder where uploaded files are saved. Don't forget to create the folder and set permissions!
+    
+    $wall_messages_file = "/pirateboxdata/messages.json";   // File where wall messages will be saved
+    $max_wall_messages = 20;	// Limit of messages in the wall.
+    
+    error_reporting(E_ERROR);
+    
+    if(isset($phppiratebox_domain) && $_SERVER['HTTP_HOST'] != $phppiratebox_domain) {
+            header("Cache-control: no-cache");
+            header("location: http://$phppiratebox_domain/");
+    }
+?>

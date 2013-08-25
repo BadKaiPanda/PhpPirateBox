@@ -1,0 +1,16 @@
+{
+    "messages": {
+        "welcome": "<div class=\"panel\"><div class=\"panel-heading\"><h3 class=\"panel-title\">Welcome!<\/h3><\/div><p>PirateBox is a self-contained mobile collaboration and file sharing device.<\/p><p>PhpPirateBox utilizes Free, Libre and Open Source software (FLOSS) to create mobile wireless file sharing networks where users can anonymously share images, video, audio, documents, and other digital content.<\/p><\/div>"
+    },
+    "files": {
+        "fileList": "<div id=\"files\">\r\n[FILE_LIST]<\/div>\r\n",
+        "fileListItem": "<div class=\"file media\">\r\n <a class=\"pull-left\" href=\"backend/files.php?download_file=[FILENAME]\" title=\"Click here to download [FILENAME]\" target=\"_blank\">\r\n <img class=\"media-object\" src=\"img\/icons\/download.png\" \/>\r\n  <\/a>\r\n  <div class=\"media-body\"><h4 class=\"media-heading\">[FILENAME]<\/h4><\/div>\r\n<\/div>",
+        "uploadForm": "<div class=\"panel\"><div class=\"panel-heading\"><h3 class=\"panel-title\">File upload</h3><\/div>\r\n <div class=\"alert alert-danger alert-block\">Files must be smaller than [MAX_FILESIZE]<\/div>\r\n <div id=\"file-upload-content\">\r\n <form id=\"upload-form\" action=\"backend/files.php\" method=\"post\" enctype=\"multipart/form-data\">\r\n <div id=\"file-drop-space\"><span>Click or drop files here to upload it to Piratebox<\/span></div>\r\n <input type=\"file\" name=\"file\" id=\"file\" multiple>\r\n </form>\r\n <div id=\"uploading-status-list\"><\/div><\/div><\/div>",
+        "uploadStatus": "<div class=\"upload-message alert alert-info\">\r\n <span>Uploading [FILENAME]</span> <div class=\"progress progress-striped active\"> <div class=\"upload-progress progress-bar\"></div> </div> <button type=\"button\" class=\"cancel-upload-button btn btn-link btn-small\">Cancel upload<\/button></li>"
+    },
+    "wall": {
+        "messageList": "<div id=\"messages\" class=\"list-group list-group-flush\">\r\n[MESSAGE_LIST]<\/div>",
+        "messageListItem": "<div class=\"message list-group-item\">\r\n <p class=\"list-group-item-text\">[MESSAGE]<\/p><h5 class=\"metadata list-group-item-heading\">[USERNAME] -- <span>[DATE]<\/span><\/h5><\/div>",
+        "postMessageForm": "<div class=\"panel\"><div class=\"panel-heading\"><h3 class=\"panel-title\">Post message to wall<\/h3><\/div><form id=\"post-message-form\" method=\"post\">\r\n<fieldset>\r\n<div class=\"form-group\">\r\n<textarea id=\"message\" class=\"form-control\"><\/textarea>\r\n<\/div>\r\n<div class=\"form-group\">\r\n<label>Username (Optional)<\/label>\r\n<input type=\"text\" id=\"username\" class=\"form-control input-small\" \/>\r\n<\/div>\r\n<\/form><\/div>"
+    }
+}

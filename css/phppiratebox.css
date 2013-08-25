@@ -1,0 +1,137 @@
+/******
+PhpPiratebox
+Copyright 2013 Sergio Monedero
+Released under GPLv3, see http://www.gnu.org/licenses/gpl-3.0.html
+******/
+
+/* Common */
+
+header {
+    border-bottom: 1em #000 dashed;
+    margin-bottom: 1em;
+}
+
+header img {
+    float: left;
+}
+
+h2 {
+    text-align: center;
+}
+
+.section {
+    display: none;
+}
+
+.buttons {
+    text-align: center;
+    margin: 0.5em;
+}
+
+
+/* Files */
+
+#files {
+    display: table;
+    width: 100%;
+}
+
+.upload-message ul {
+    margin: 0 auto;
+}
+
+.upload-message ul li {
+    display: table-cell;
+    float: left;
+    width: 45%;
+}
+
+.upload-message span {
+    font-weight: bold;
+}
+
+.file {
+    float: left;
+    width: 49%;
+    height: 50px;
+    background: #eee;
+    border-radius: 5px;
+    margin: 0 auto 0.3em 0.3em;
+    overflow: hidden;
+}
+
+.file img {
+    background: #5CB811;
+    border-radius: 5px;
+}
+
+#upload-form {
+    height: 100%;
+}
+
+#upload-form input {
+    display: none;
+}
+
+#file-drop-space {
+    width: 100%;
+    height: 100px;
+    border: 1em #000 dashed;
+    border-radius: 10px;
+}
+
+#file-drop-space span{
+    font-size: 1.3em;
+}
+
+#file-drop-space.hover {
+    background-color: #eee;
+}
+
+#uploading-status-list {
+    margin-top: 1em;
+    max-height: 210px;
+    overflow-y: auto;
+}
+
+.upload-progress {
+    text-align: center;
+}
+
+#file-upload-content {
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+.progress {
+    margin-bottom: 0;
+}
+
+
+/* Alertify hacks */
+
+.alertify-cover {
+    opacity: 1;
+    background: radial-gradient(ellipse at 50% 75px, rgba(0,0,0,0) 0%, rgba(50,50,50,0.25) 60%, rgba(150,150,150,0.7) 100%);
+}
+
+.alertify-dialog{
+    padding: 0;
+}
+
+.alertify-message {
+    display: none;
+}
+
+.alertify-buttons {
+    margin-bottom: 0.7em;
+}
+
+.alertify-dialog .panel {
+    border: none;
+    margin-bottom: 0;
+}
+
+.alertify-text {
+    display: none;
+}
